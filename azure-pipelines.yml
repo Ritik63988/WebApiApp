@@ -7,10 +7,10 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: RitikAgent
 
 steps:
-- script: echo Hello, world!
+- script: echo Hello, Ritik!
   displayName: 'Run a one-line script'
 
 - script: |
