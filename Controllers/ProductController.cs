@@ -46,7 +46,7 @@ namespace ProductService.Controllers
             {
                 Id = 3,
                 Name = "Keyboard",
-                Price = 2000
+                Price = 2100
             }
         };
 
