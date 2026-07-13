@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: RitikAgent
+  name: 'RitikAgent'
 
 steps:
 - script: echo Hello, Ritik!
