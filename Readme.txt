@@ -19,3 +19,10 @@ Deployment-
 a. Service connection...AzureResourcegroup...AzureWebapp...Deploy(Zipfile)
 DotnetCoreService..NavneetWebApp
 NavneetUpdatedConnection
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Ritik63988/WebApiApp.git
+git push -u origin main
