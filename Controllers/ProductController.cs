@@ -57,7 +57,7 @@ namespace ProductService.Controllers
               new Product
             {
                 Id = 6,
-                Name = "CpU",
+                Name = "Printer",
                 Price = 2155
             }
         };
