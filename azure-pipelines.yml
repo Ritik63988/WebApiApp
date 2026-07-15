@@ -9,7 +9,6 @@ variables:
   dotnetVersion: '10.0.x'
 
 steps:
-
 # Install .NET 10 SDK
 - task: UseDotNet@2
   displayName: 'Install .NET SDK'
@@ -45,15 +44,15 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact'
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'drop'
+    pathToPublish: '$(Build.ArtifactStagingDirectory)'   # ✅ corrected key name
+    artifactName: 'drop'
+    publishLocation: 'Container'
 
-# Deploy
 # Deploy to Azure App Service
 - task: AzureWebApp@1
   displayName: 'Deploy to Azure App Service'
   inputs:
-    azureSubscription: 'WebApiConnection'
+    azureSubscription: 'WebApiConnection'   # ✅ must match your service connection name
     appType: 'webApp'
-    appName: 'RitikWebApp'
+    appName: 'RitikWebApp'                  # ✅ must match exactly (no space)
     package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
