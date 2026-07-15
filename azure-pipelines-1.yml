@@ -2,7 +2,7 @@ trigger:
 - master
 
 pool:
-  name: 'NavneetAgent'
+  name: 'RitikAgent'
 
 variables:
   buildConfiguration: 'Release'
