@@ -26,3 +26,7 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/Ritik63988/WebApiApp.git
 git push -u origin main
+
+WebApiConnection(Connection name).
+
+ritikwebapp-awc3gfbwhqg7fsbn.centralindia-01.azurewebsites.net
